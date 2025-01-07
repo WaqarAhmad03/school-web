@@ -1,6 +1,6 @@
 // import Menu from "@/components/Menu";
 import Menu from "../../components/Menu"
-import Navbar from "@/components/Navbar";
+import Navbar from "../../components/Navbar";
 import Logo from "../../../public/logo.png"
 import Link from "next/link";
 
