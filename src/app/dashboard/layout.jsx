@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function DashboardLayout({ children }) {
     return (
-        <div className=" flex">
+        <div className=" flex min-h-screen">
           {/* {children} */}
           {/* Left */}
           <div className="w-[14%] md:w-1/12 lg:w-1/5 transition-all">
