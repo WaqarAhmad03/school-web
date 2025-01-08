@@ -1,6 +1,7 @@
 import React from 'react'
 import UserCard from "../../../components/UserCard"
 import CountChart from "../../../components/CountChart"
+import AttendenceChart from "../../../components/AttendenceChart"
 // import { RadialBarChart } from 'recharts'
 
 const AdminPage = () => {
@@ -14,11 +15,13 @@ const AdminPage = () => {
           <UserCard type="parent"/>
         </div>
 
-        <div className='flex flex-col lg:flex-row'>
+        <div className='flex flex-col lg:flex-row gap-4'>
           <div className='w-full lg:w-1/3 h-[450px]'>
             <CountChart/>
           </div>
-          <div className='w-full lg:w-2/3 h-[450px]'></div>
+          <div className='w-full lg:w-2/3 h-[450px]'>
+            <AttendenceChart/>
+          </div>
         </div>
         
       </div>
