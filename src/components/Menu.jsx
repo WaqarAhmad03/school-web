@@ -123,7 +123,7 @@ const Menu = () => {
   return (
     <div className='lg:ps-4 text-sm'>
       {menuItems.map((i)=>{
-        return <div className='flex flex-col gap-4 mb-4' key={i.title2}>
+        return <div className='flex flex-col gap-4 mb-4' key={i}>
           <p className='text-gray-400 font-light hidden lg:block'>{i.title}</p>
           {i.items.map((item)=>{
             return <div key={item}>
