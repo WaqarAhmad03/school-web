@@ -44,19 +44,19 @@ const AttendenceChart = () => {
           width={500}
           height={300}
           data={data}
-        //   margin={{
-        //     top: 5,
-        //     right: 30,
-        //     left: 20,
-        //     bottom: 5,
-        //   }}
-        barSize={20}
+          margin={{
+            // top: 5,
+            // right: 30,
+            left: -30,
+            // bottom: 5,
+          }}
+        barSize={15}
         >
           <CartesianGrid strokeDasharray="3 3" vertical={false} stroke='#ddd'/>
-          <XAxis dataKey="name" tick={{fill:"#d1d5db"}} tickLine={false} axisLine={false} />
-          <YAxis  tickLine={false} axisLine={false} tick={{fill:"#d1d5db"}}/>
+          <XAxis dataKey="name" tick={{fill:"#d1d5db",fontSize:"10px"}} tickLine={false} axisLine={false} />
+          <YAxis  tickLine={false} axisLine={false} tick={{fill:"#d1d5db",fontSize:"10px"}}/>
           <Tooltip contentStyle={{borderRadius:"10px", borderColor:"lightgray"}}/>
-          <Legend align='left' verticalAlign='top' wrapperStyle={{paddingBottom:"40px", paddingTop: "20px"}}/>
+          <Legend align='left' verticalAlign='top' wrapperStyle={{paddingBottom:"40px", paddingTop: "20px", fontSize:"12px",paddingLeft:"30px"}}/>
           <Bar dataKey="present" fill="#fae27c" legendType='circle' radius={[10,10,0,0]} activeBar={<Rectangle fill="gold" stroke="gold" />} />
           <Bar dataKey="absent" fill="#c3ebfa" legendType='circle' radius={[10,10,0,0]} activeBar={<Rectangle fill="blue" stroke="blue" />} />
         </BarChart>
