@@ -17,7 +17,7 @@ export default function DashboardLayout({ children }) {
             <Menu/>
           </div>
           {/* Right */}
-          <div className="w-[86%] md:w-11/12 lg:w-4/5 bg-[#f7f8fa] transition-all">
+          <div className="w-[86%] md:w-11/12 lg:w-4/5 bg-[#ececec] transition-all border-l">
             <Navbar/>
             {children}
           </div>
@@ -25,3 +25,4 @@ export default function DashboardLayout({ children }) {
     );
   }
   
+  // #f7f8fa
