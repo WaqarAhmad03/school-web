@@ -3,6 +3,7 @@ import UserCard from "../../../components/UserCard"
 import CountChart from "../../../components/CountChart"
 import AttendenceChart from "../../../components/AttendenceChart"
 import FinanceChart from "../../../components/FinanceChart"
+import EventCalender from "../../../components/EventCalender"
 // import { RadialBarChart } from 'recharts'
 
 const AdminPage = () => {
@@ -30,7 +31,9 @@ const AdminPage = () => {
         </div>
         
       </div>
-      <div className='w-full md:w-1/3'></div>
+      <div className='w-full md:w-1/3 flex flex-col gap-8'>
+        <EventCalender/>
+      </div>
     </div>
   )
 }
