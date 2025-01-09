@@ -2,6 +2,7 @@ import React from 'react'
 import UserCard from "../../../components/UserCard"
 import CountChart from "../../../components/CountChart"
 import AttendenceChart from "../../../components/AttendenceChart"
+import FinanceChart from "../../../components/FinanceChart"
 // import { RadialBarChart } from 'recharts'
 
 const AdminPage = () => {
@@ -22,6 +23,10 @@ const AdminPage = () => {
           <div className='w-full lg:w-2/3 h-[450px]'>
             <AttendenceChart/>
           </div>
+        </div>
+
+        <div className='w-full h-[500px]'>
+          <FinanceChart/>
         </div>
         
       </div>
